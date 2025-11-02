@@ -7,3 +7,7 @@ class LoanCalculator:
     def total_interest(self):
         interest = self.principal*(self.interest_rate/100)*self.years
         return interest
+    
+    def total_amount(self):
+        amount_repaid = self.principal + self.total_interest()
+        return amount_repaid
