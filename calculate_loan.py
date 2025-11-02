@@ -22,6 +22,6 @@ loan = LoanCalculator(principal=2_000_000,interest_rate=10,years=5)
 loan = LoanCalculator(principal=50000,interest_rate=5,years=1)
 
 print("\n --- Loan Details ---")
-print(f"Amount to be repaid after {loan.years} : {loan.total_amount():.2f}")
+print(f"Amount to be repaid after {loan.years} year(s) : {loan.total_amount():.2f}")
 print(f"Total interest:{loan.total_interest():.2f}")
 print(f"Monthly installment:{loan.monthly_installment():.2f}")
