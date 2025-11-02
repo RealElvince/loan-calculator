@@ -11,3 +11,8 @@ class LoanCalculator:
     def total_amount(self):
         amount_repaid = self.principal + self.total_interest()
         return amount_repaid
+    
+    def monthly_installment(self):
+        months = self.years*12
+        monthly_installment = self.principal/months
+        return monthly_installment
