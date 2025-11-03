@@ -16,10 +16,13 @@ class LoanCalculator:
         months = self.years*12
         monthly_installment = self.principal/months
         return monthly_installment
+
+    
     
 
 loan = LoanCalculator(principal=2_000_000,interest_rate=10,years=5)
 loan = LoanCalculator(principal=50000,interest_rate=5,years=1)
+loan = LoanCalculator(principal=20_000_000,interest_rate=18.75,years=15)
 
 print("\n --- Loan Details ---")
 print(f"Amount to be repaid after {loan.years} year(s) : {loan.total_amount():.2f}")
